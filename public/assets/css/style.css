@@ -1,47 +1,27 @@
+/* ================================== */
+/* Core Elements */
+/* ================================== */
+
+/* Set up the fonts and background.
+Note that we'll be adding element backgrounds so that the font and background don't clash. */
+
 body {
     background: rgb(78, 42, 4);
-    font-size: 1.5vw;
+    font-size: 1.25vw;
+    font-family: 'Heebo', sans-serif;
     color: rgb(78, 42, 4);
 }
 
-.left, .right, .bottom {
+/* Center all Htext */
+
+h1, h2, h3 {
     text-align: center;
-    display: block;
-    width: 23%;
-    background-color: palegoldenrod;
-    padding: 2vw;
-    position: fixed;
-    border-radius: 10vw;
 }
 
-.left, .right {
-    top: 5vw;
-}
-
-.left {
-    left: 5vw;
-}
-
-.right {
-    right: 5vw;
-}
-
-.bottom {
-    left: 33.5%;
-    right: 33.5%;
-    margin: 0 auto 0 auto;
-}
-
-.burger {
-    display: block;
-    position: relative;
-    margin: 3vw auto;
-    max-width: 45%;
-}
+/* Make H1 a matching box to the other elements. Centering, padding, backgrounding, width-maxing. */
 
 h1 {
     display: block;
-    text-align: center;
     margin: 0 auto;
     color: rgb(78, 42, 4);
     border-radius: 10vw;
@@ -50,29 +30,90 @@ h1 {
     background-color: palegoldenrod;
 }
 
+/* Change default H3 size */
+
 h3 {
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
+/* Button styling to match the page's colors and fonts, colors inverted */
+
 button {
+    font-family: 'Heebo', sans-serif;
     text-align: center;
-    padding: 0.25vw;
+    padding: 0 0.5vw;
     margin: 0vw auto;
     height: auto;
     background: rgb(78, 42, 4);
     color: palegoldenrod;
+    font-size: 1vw;
 }
 
-.form-group {
-    text-align: center;
-}
+/* Make the input field spread wide, and be taller. */
 
 input {
     width: 100%;
     height: 2vw;
 }
 
+/* Padds all UL entries, removes buttons. */
+
 ul {
-    text-align: right;
     padding-right: 3vw;
+    list-style-type: none;
+}
+
+/* ================================== */
+/* Custom Classes */
+/* ================================== */
+
+/* Round edges into kind of a burger look, set widths, center, add background, and fix. */
+
+.left, .right, .bottom {
+    text-align: center;
+    display: block;
+    min-width: 23%;
+    max-width: 30%;
+    background-color: palegoldenrod;
+    padding: 2vw;
+    position: fixed;
+    border-radius: 10vw;
+}
+
+/* Fix left and right to 5vw from the top */
+
+.left, .right {
+    top: 5vw;
+}
+
+/* Fix left to 5vw from the left */
+
+.left {
+    text-align: right;
+    left: 5vw;
+}
+
+/* Fix right to 5vw from the right */
+
+.right {
+    text-align: left;
+    right: 5vw;
+}
+
+/* Fix central to page. */
+
+.bottom {
+    max-width: 23%;
+    left: 0.0001%;
+    right: 0.0001%;
+    margin: 0 auto 0 auto;
+}
+
+/* Position the burger image, add margins. */
+
+.burger {
+    display: block;
+    position: relative;
+    margin: 3vw auto;
+    max-width: 45%;
 }

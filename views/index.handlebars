@@ -1,8 +1,10 @@
+{{!-- Header --}}
 <h1>Burger Time</h1>
 
-
+{{!-- Available burgers 'table'. --}}
 <div class="left"><h2>Available Burgers</h2>
 
+{{!-- 'for loop' of undevoured burgers, with Eat Me buttons. --}}
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
@@ -15,19 +17,21 @@
 <div class="burger" style="text-align: center">
 <img class="burger" src="/assets/img/burger.png"></div>
 
-
+{{!-- Devoured burgers 'table'. --}}
 <div class="right"><h2>Devoured Burgers</h2>
 
+{{!-- 'for loop' of devoured burgers. --}}
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-    {{!-- <li> --}}
+    <li>
         {{burger_name}}
-    {{!-- </li> --}}
+    </li>
     {{/if}}
   {{/each}}
 </ul></div>
 
+{{!-- Burger orderer. Make a new burger to be eaten with this create form entry and button. --}}
 <div class="bottom">
 <h2>Order a Burger</h2>
 <form class="create-form">
