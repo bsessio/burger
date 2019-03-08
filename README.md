@@ -7,20 +7,17 @@ If you're like me, you want to eat just, so, so many burgers. This web app will 
 ## Instructions
 Install this on your local server, installing the schema and seeds, and initialize the server. Then eat burgers all day!
 
-["WATCHME video!"](https://bsessio.github.io/burger/public/assets/video/WATCHME.mov)
+Navigate yourself to the website found here: [ "Burger Time!"](https://burger-bws.herokuapp.com/)
 
-###### (note: the below document was written with the intent for the video above not to be necessary)
-###### Navigate yourself to the website found here: [ "Burger Time!"](https://burger-bws.herokuapp.com/)
+Then, you can either add a burger by ordering a custom one up, or you can devour one of the burgers already available by clicking Eat Me. 
 
-###### Then, you can either add a burger by ordering a custom one up, or you can devour one of the burgers already available by clicking Eat Me. 
+This will change the state to Devoured: True from Devoured: False and move it to the other 'table'. You can not un-eat a burger.
 
-###### This will change the state to Devoured: True from Devoured: False and move it to the other 'table'. You can not un-eat a burger.
+You can do the ordering and eating a lot, though.
 
-###### You can do the ordering and eating a lot, though.
+Just, like, so much.
 
-###### Just, like, so much.
-
-###### There is kind-of a limit to how many you can read on the page, but no limit to the amount you can actually eat (just how many you can visibly wait to eat.)
+There is kind-of a limit to how many you can read on the page, but no limit to the amount you can actually eat (just how many you can visibly wait to eat.)
 
 ## Package Dependencies
 
