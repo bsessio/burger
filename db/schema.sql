@@ -1,3 +1,4 @@
+USE jawsDBname;
 -- Creates burgers DB. 
 -- DROP DATABASE IF EXISTS burgers_db; for use if desired.
 CREATE DATABASE burgers_db;
