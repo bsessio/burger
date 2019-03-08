@@ -39,9 +39,9 @@ let orm = {
   // I kind of just made this simpler for me, but inserts new burgers into the burger database,
     //  pending value entered.
   insertOne: function(vals, cb) {
-    let queryString = "INSERT INTO burgers ('burger_name') VALUES ('";
+    let queryString = "INSERT INTO burgers (burger_name) VALUES ('";
     queryString += vals;
-    queryString += "') ";
+    queryString += "');";
     console.log(queryString);
     connection.query(queryString, vals, function(err, result) {
       if (err) {
